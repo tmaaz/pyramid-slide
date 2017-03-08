@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Pyramid Slide | STLCC 101 - JavaScript</title>
+        <link rel="stylesheet" type="text/css" href="mystyles.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Open+Sans+Condensed:300" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Raleway:700|Raleway:300" rel="stylesheet" />
+    </head>
+    <body >
+        <main id="contentwrap">
+            <header id="wrap">
+                <h1>The Pyramid Slide!</h1>
+                <h6>by Trevor Masinelli - STLCC 101 | Pyramid Slider Project</h6>
+                <hr />
+            </header>
+            <section id="heading">
+                <p>
+                    <strong>Brick Symbol:</strong>&nbsp;
+                    <select id="brickChoice">
+                        <option value="ice">&#9634;&nbsp;Ice Block</option>
+                        <option value="wood">&#9639;&nbsp;Wood Crate</option>
+                        <option value="brick">&#9638;&nbsp;Brick Stack</option>
+                        <option value="steel">&#9635;&nbsp;Steel Cube</option>
+                    </select>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <strong>How High?:</strong>&nbsp;
+                    <input id="brickrange" type="range" min="1" max="20" value="10" oninput="brickCount.value=value; getHeightAndDraw(this.value)"></input>
+                    &nbsp;<strong><output id="brickCount">10</output></strong>
+            </section>
+            <br />
+            <section id="pyramid">
+                <p id="ice">&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&#9634;&#9634;</p>
+                <p id="ice">&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&#9634;&#9634;&#9634;</p>
+                <p id="ice">&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&#9634;&#9634;&#9634;&#9634;</p>
+                <p id="ice">&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&#9634;&#9634;&#9634;&#9634;&#9634;</p>
+                <p id="ice">&#8195;&#8195;&#8195;&#8195;&#8195;&#9634;&#9634;&#9634;&#9634;&#9634;&#9634;</p>
+                <p id="ice">&#8195;&#8195;&#8195;&#8195;&#9634;&#9634;&#9634;&#9634;&#9634;&#9634;&#9634;</p>
+                <p id="ice">&#8195;&#8195;&#8195;&#9634;&#9634;&#9634;&#9634;&#9634;&#9634;&#9634;&#9634;</p>
+                <p id="ice">&#8195;&#8195;&#9634;&#9634;&#9634;&#9634;&#9634;&#9634;&#9634;&#9634;&#9634;</p>
+                <p id="ice">&#8195;&#9634;&#9634;&#9634;&#9634;&#9634;&#9634;&#9634;&#9634;&#9634;&#9634;</p>
+                <p id="ice">&#9634;&#9634;&#9634;&#9634;&#9634;&#9634;&#9634;&#9634;&#9634;&#9634;&#9634;</p>
+            </section>
+            <hr id="grass" />
+            <script src="pyslide.js"></script>
+        </main>
+    </body>
+</html>
